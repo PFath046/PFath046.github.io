@@ -1,0 +1,13 @@
+p {
+    font-family: verdana;
+    color: blue;
+    font-size: 100%;
+}
+h2 {
+    font-family: verdana;
+    color: red;
+    font-size: 150%;
+}
+div {
+    border: 2px outset black;
+}
