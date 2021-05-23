@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <title>UI Satisfaction Survey</title>
+</head>
+<h2>The following survey will evaluate your level of satisfaction with the UI of
+    <a href="https://www.groupon.ca/">Groupon</a></h2>
+<body>
+<form method="post">
+    <div>
+        <p><br><label>How would you describe the UI in one word?
+            <input type="text"/></label></p>
+    </div>
+    <div>
+        <p><br>On a scale of 0-3, how efficient was the UI?</p>
+        <input type="radio" id="0" name="efficiency">
+        <label for="0">0</label><br>
+        <input type="radio" id="1" name="efficiency">
+        <label for="1">1</label><br>
+        <input type="radio" id="2" name="efficiency">
+        <label for="2">2</label><br>
+        <input type="radio" id="3" name="efficiency">
+        <label for="3">3</label><br>
+    </div>
+    <div>
+        <p><br><label for="time">How often do you use this website?</label></p>
+        <input list="times" name="time" id="time">
+        <datalist id="times">
+            <option value="Often">
+            <option value="Sometimes">
+            <option value="Rarely">
+        </datalist>
+    </div>
+    <div>
+        <p><br>What did you like about the UI?</p>
+        <input type="checkbox" id="design">
+        <label for="design"> Design</label><br>
+        <input type="checkbox" id="ease">
+        <label for="ease"> Ease of use</label><br>
+        <input type="checkbox" id="features">
+        <label for="features"> Features</label><br>
+        <input type="checkbox" id="consistency">
+        <label for="consistency"> Consistency</label><br>
+        <input type="checkbox" id="utility">
+        <label for="utility"> Utility</label><br>
+    </div>
 
+    <div><p><br>Do you have any comments that can help us improve the UI?</p>
+        <label>
+            <textarea rows="4" cols="50" name="comments"></textarea>
+        </label>
+        <br></div>
+    <input type="submit">
+    <input type="reset">
+</form>
+<footer>
+    <br>
+    <p>Survey designed by: Parsa F</p>
+</footer>
+</body>
+</html>
