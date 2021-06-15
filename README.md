@@ -1,1 +1,4 @@
-Hello
+- [Lab 1 Title](/SEG3125_lab1)
+- [Lab 2 Title](/SEG3125_lab2)
+- [Lab 3 Title](/SEG3125_lab3)
+- [Lab 4 Title](/SEG3125_lab4)
