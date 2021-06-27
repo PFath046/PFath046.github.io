@@ -4,3 +4,4 @@ SEG 3125
 - [Lab 2](https://github.com/PFath046/PFath046.github.io/tree/main/SEG3125_lab2)
 - [Lab 3](/SEG3125_lab3)
 - [Lab 4](/SEG3125_lab4)
+- [Lab 5,6](/SEG3125_lab5,6)

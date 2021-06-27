@@ -1,0 +1,277 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Module 4 Lab</title>
+
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/service.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">&nbsp; Navigation Menu:</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#1st"><img src="https://img.icons8.com/officel/40/000000/about.png" alt="about"/> About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#2nd"><img src="https://img.icons8.com/officel/40/000000//doctors-bag.png" alt="service"/> Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#3rd"><img src="https://img.icons8.com/officel/40/000000/nurse-female.png" alt="doctor"/> Doctors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#4th"><img src="https://img.icons8.com/officel/40/000000/clinic.png" alt="appoint"/> Appointments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#5th"><img src="https://img.icons8.com/officel/40/000000/address.png" alt="address"/> Address</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class="container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="https://img.icons8.com/officel/120/000000/parrot.png" alt="vet"/> Welcome to the Smith Falls Veterinary Clinic</h1>
+    </nav>
+
+    <div class=" p-3 my-3 border bg-light" id="1st">
+        <h1 class=""><img src="https://img.icons8.com/officel/60/000000/about.png" alt="about"/> About us</h1>
+        <p class="p-4 my-3" style="font-size: 25px">We are a veterinary clinic located in Smiths Falls, Ontario.</p>
+        <p class="p-4 my-3" style="font-size: 25px">We are dedicated to providing the <strong>best</strong> care to your
+            animal.</p>
+        <p class="p-4 my-3" style="font-size: 25px">See the table bellow for a list of services that we offer:</p>
+    </div>
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    <table class="table table-info table-hover" id="2nd">
+        <thead>
+        <tr>
+            <th scope="col"><h2><img src="https://img.icons8.com/officel/40/000000/doctors-bag.png" alt="service"/> Service</h2></th>
+            <th scope="col"><h2>Description</h2></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src="https://img.icons8.com/officel/40/000000/tooth.png" alt="dental"/> Dentistry</td>
+            <td>Dental care for animals</td>
+        </tr>
+        <tr>
+            <td><img src="https://img.icons8.com/officel/40/000000/scissors.png" alt="trim"/> Trimming</td>
+            <td>Showering and trimming services</td>
+        </tr>
+        <tr>
+            <td><img src="https://img.icons8.com/officel/40/000000/stethoscope.png" alt="check"/> Checkup (at clinic)</td>
+            <td>Regular health checkup services at the clinic</td>
+        </tr>
+        <tr>
+            <td><img src="https://img.icons8.com/officel/40/000000/massage-table.png" alt="check"/> Checkup (at home)</td>
+            <td>Regular health checkup services at home</td>
+        </tr>
+        <tr>
+            <td><img src="https://img.icons8.com/officel/40/000000/syringe.png" alt="vax" /> Vaccinations</td>
+            <td>Animal vaccinations to prevent disease</td>
+        </tr>
+        </tbody>
+    </table>
+    <h1>Alert!</h1>
+    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
+    https://getbootstrap.com/docs/5.0/components/alerts/
+    -->
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Due to the <strong>COVID-19</strong> pandemic, you must have an appointment to be allowed inside the clinic.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+They can be organized using a CSS grid or other layout options.
+https://getbootstrap.com/docs/5.0/components/card/
+-->
+
+    <h1><img src="https://img.icons8.com/officel/60/000000/nurse-female.png" alt="doctors"/> Meet the Physicians!</h1>
+    <div class="row justify-content-around" id="3rd">
+        <div class="card" style="width: 18rem;">
+            <img src="images/Doc1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Dr. Yang is a professional and experienced dentist!</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/Doc2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Dr. Phil is the leading physician at our clinic!</p>
+            </div>
+        </div>
+    </div>
+
+    <h1><img src="https://img.icons8.com/officel/60/000000/clinic.png" alt="appoint"/> Appointments</h1>
+
+    <!-- Button trigger modal
+    We use the same button code from above, but now we can trigger a modal to appear.
+    The bootstrap tutorial includes many different types of modals that you can explore
+    https://getbootstrap.com/docs/5.0/components/modal/
+    -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Click to book an appointment
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Please fill in the following form:
+                    <div><br>
+                        <label for="name"> Name
+                            <input class="text-input" type="text" id="name">
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="name"> E-mail
+                            <input class="text-input" type="email" id="email">
+                        </label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="name"> Date and time
+                            <input class="text-input" type="datetime-local" id="date">
+                        </label>
+                    </div>
+                    <br>
+                    Select a service:
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="dentist">
+                        <label class="form-check-label" for="dentist">
+                            Dentistry
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="Trimming">
+                        <label class="form-check-label" for="Trimming">
+                            Bath
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="clinic">
+                        <label class="form-check-label" for="clinic">
+                            Checkup at clinic
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="home">
+                        <label class="form-check-label" for="home">
+                            Checkup at home
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="vax">
+                        <label class="form-check-label" for="vax">
+                            Vaccination
+                        </label>
+                    </div>
+                    <br>
+                    Select a physician:
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="yang">
+                        <label class="form-check-label" for="yang">
+                            Dr. Yang
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="phil">
+                        <label class="form-check-label" for="phil">
+                            Dr. Phil
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    <h1><img src="https://img.icons8.com/officel/60/000000/address.png" alt="address"/> Address and phone number</h1>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample" id="4th">
+        Click to expand
+    </button>
+
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <p class="p-4 my-3" style="font-size: 25px">
+                Address:
+                125 Smith Falls, Ontario, Canada, L1L 2B3
+            </p>
+            <p class="p-4 my-3" style="font-size: 25px">
+                Phone Number: 802 999 1234
+            </p>
+        </div>
+    </div>
+
+    <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+</html>
