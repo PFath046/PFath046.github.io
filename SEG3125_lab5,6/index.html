@@ -12,11 +12,7 @@ This will help you get started with your code!
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
-    <title>Module 4 Lab</title>
-
-
-    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Module 5 Lab</title>
 
     <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
     <!-- which is built on top of JQuery and offers additional possibilities -->
@@ -70,7 +66,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     -->
 
     <nav class="navbar bg-dark text-white p-3 my-3 ">
-        <h1><img src="https://img.icons8.com/officel/120/000000/parrot.png" alt="vet"/> Welcome to the Smith Falls Veterinary Clinic</h1>
+        <h1><img src="https://img.icons8.com/officel/120/000000/year-of-dog.png" alt="vet"/> Welcome to the Smith Falls Veterinary Clinic</h1>
     </nav>
 
     <div class=" p-3 my-3 border bg-light" id="1st">
@@ -115,7 +111,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         </tr>
         </tbody>
     </table>
-    <h1>Alert!</h1>
+    <h1><br>Alert!</h1>
     <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
     https://getbootstrap.com/docs/5.0/components/alerts/
     -->
@@ -129,23 +125,27 @@ They can be organized using a CSS grid or other layout options.
 https://getbootstrap.com/docs/5.0/components/card/
 -->
 
-    <h1><img src="https://img.icons8.com/officel/60/000000/nurse-female.png" alt="doctors"/> Meet the Physicians!</h1>
+    <h1><br><img src="https://img.icons8.com/officel/60/000000/nurse-female.png" alt="doctors"/> Meet the Physicians!</h1>
     <div class="row justify-content-around" id="3rd">
         <div class="card" style="width: 18rem;">
             <img src="images/Doc1.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Dr. Yang is a professional and experienced dentist!</p>
+                <p class="card-text">Available on:</p>
+                <p class="card-text">Mondays, Tuesdays, Wednesdays</p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="images/Doc2.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Dr. Phil is the leading physician at our clinic!</p>
+                <p class="card-text">Available on:</p>
+                <p class="card-text">Thursdays, Fridays</p>
             </div>
         </div>
     </div>
 
-    <h1><img src="https://img.icons8.com/officel/60/000000/clinic.png" alt="appoint"/> Appointments</h1>
+    <h1><br><img src="https://img.icons8.com/officel/60/000000/clinic.png" alt="appoint"/> Appointments</h1>
 
     <!-- Button trigger modal
     We use the same button code from above, but now we can trigger a modal to appear.
@@ -176,6 +176,11 @@ https://getbootstrap.com/docs/5.0/components/card/
                         <label for="name"> E-mail
                             <input class="text-input" type="email" id="email">
                         </label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
                     </div>
                     <br>
                     <div>
@@ -244,7 +249,7 @@ https://getbootstrap.com/docs/5.0/components/card/
     We can also use buttons to expand some hidden options
     https://getbootstrap.com/docs/5.0/components/collapse/
     -->
-    <h1><img src="https://img.icons8.com/officel/60/000000/address.png" alt="address"/> Address and phone number</h1>
+    <h1><br><img src="https://img.icons8.com/officel/60/000000/address.png" alt="address"/> Address and phone number</h1>
 
     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
             aria-expanded="false" aria-controls="collapseExample" id="4th">
